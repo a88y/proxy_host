@@ -2,9 +2,9 @@ function FindProxyForURL( url, host ) {
     // Default to using no proxy.
     var ProxyConfig = "DIRECT";
 
-    if( dnsDomainIs( host, "api.foobar.com" ) ) {
+    if( dnsDomainIs( host, "netflix.com" ) ) {
         // Requested domain matches, let's use the proxy.
-        ProxyConfig = "SOCKS5 127.0.0.1:12345";
+        ProxyConfig = "SOCKS5 192.168.1.5:8080";
     }
 
     return ProxyConfig;
