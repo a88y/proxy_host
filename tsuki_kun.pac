@@ -4,23 +4,23 @@ function FindProxyForURL( url, host ) {
 
     if( shExpMatch( host, "*.netflix.*" ) ) {
         // Requested domain matches, let's use the proxy.
-        ProxyConfig = "PROXY 192.168.1.5:8080";
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
     if( shExpMatch( host, "*.nflximg.*" ) ) {
-        ProxyConfig = "PROXY 192.168.1.5:8080";
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
     if( shExpMatch( host, "*.nflxvideo.*" ) ) {
-        ProxyConfig = "PROXY 192.168.1.5:8080";
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
     if( shExpMatch( host, "*.nflxext.*" ) ) {
-        ProxyConfig = "PROXY 192.168.1.5:8080";
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
     if( shExpMatch( host, "*.reddit.com" ) ) {
-        ProxyConfig = "PROXY 192.168.1.5:8080";
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
     return ProxyConfig;
