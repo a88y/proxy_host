@@ -23,5 +23,9 @@ function FindProxyForURL( url, host ) {
         ProxyConfig = "SOCKS 192.168.1.5:8080";
     }
 
+    if( shExpMatch( host, "stg.matahari.com" ) ) {
+        ProxyConfig = "SOCKS 192.168.1.5:8080";
+    }
+
     return ProxyConfig;
 }
