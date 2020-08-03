@@ -5,6 +5,7 @@ function FindProxyForURL(url, host) {
 // If the requested website is hosted within the internal network, send direct.
     if (isPlainHostName(host) ||
 		shExpMatch(host, "*.local") ||
+		shExpMatch(host, "*.website") ||
 		shExpMatch(host, "10.*") ||
 		shExpMatch(host, "172.*") ||
 		shExpMatch(host, "172.17.6.51") ||
@@ -50,3 +51,7 @@ function FindProxyForURL(url, host) {
     return "PROXY 172.17.2.11:3128";
  
 }
+
+http://localhost/html/mds_net_hack.pac
+
+http://192.168.6.231/proxy/proxy.pac
