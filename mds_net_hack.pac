@@ -51,7 +51,3 @@ function FindProxyForURL(url, host) {
     return "PROXY 172.17.2.11:3128";
  
 }
-
-http://localhost/html/mds_net_hack.pac
-
-http://192.168.6.231/proxy/proxy.pac
